@@ -1,0 +1,58 @@
+# =========================================================
+# MAKO CONFIGURATION
+# =========================================================
+# Palette matched to config/settings.lua:
+#   active_border   = rgba(ffffffff)
+#   inactive_border = rgba(66666699)
+#   rounding        = 8
+#   font            = JetBrainsMono Nerd Font (from hyprlock.conf)
+# Cinematic minimalism: flat, no shadow spam, short timeout.
+# =========================================================
+
+# Position & layout
+sort=-time
+layer=overlay
+anchor=top-right
+margin=14
+padding=10,14
+
+# Sizing
+width=340
+height=110
+border-size=1
+border-radius=8
+max-visible=3
+
+# Timing
+default-timeout=5000
+ignore-timeout=false
+
+# Typography
+font=JetBrainsMono Nerd Font 10
+
+# Colors — default (normal urgency)
+background-color=#111111ee
+text-color=#ffffffff
+border-color=#ffffffff
+progress-color=over #333333ff
+
+# Grouping & actions
+group-by=app-name
+actions=1
+
+format=<b>%s</b>\n%b
+
+[urgency=low]
+border-color=#666666ff
+default-timeout=3000
+
+[urgency=normal]
+border-color=#ffffffff
+
+[urgency=critical]
+border-color=#ff4444ff
+background-color=#1a0000ee
+default-timeout=0
+
+[mode=dnd]
+invisible=1
